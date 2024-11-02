@@ -63,7 +63,7 @@ export function PrimaryFeatures() {
     <section
       id="features"
       aria-label="Features for running your books"
-      className="relative overflow-hidden bg-blue-600 pb-28 pt-20 sm:py-32"
+      className="relative overflow-hidden  pb-28 pt-20 sm:py-32"
     >
       <Image
         className="absolute left-1/2 top-1/2 max-w-none translate-x-[-44%] translate-y-[-42%]"
@@ -79,7 +79,8 @@ export function PrimaryFeatures() {
             Features
           </h2>
           <p className="mt-6 text-lg tracking-tight text-blue-100">
-          With Circles, saving together is more secure, social, and engaging than ever before!
+          Experience Seamless Borderless Payments with Paycrest Protocol
+          Send crypto, provide liquidity, or build on our cutting-edge platform – Paycrest empowers you to seamlessly bridge the worlds of digital assets and traditional finance.
           </p>
         </div>
         <TabGroup

@@ -6,6 +6,7 @@ import { Tab, TabGroup, TabList, TabPanel, TabPanels } from '@headlessui/react'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
+import { Button } from './Button'
 
 
 
@@ -19,9 +20,9 @@ interface Feature {
 
 const features: Array<Feature> = [
   {
-    name: '',
-    summary: 'Engagement & Rewards',
-    description: 'Circles makes saving engaging through friendly competition and rewards for hitting group milestones, transforming saving from a static, individual process to an exciting, social experience. Web2 savings can’t match this level of fun and motivation!',
+    name: (<Button className="mb-4">Start Staking</Button>),
+    summary: 'Automated p2p Trading',
+    description: 'Automate your peer to peer trades. Merchants can stake their crypto and we trade their desired order for you \n Stake fiat to automate crypto purchase ',
 
     icon: function ReportingIcon() {
       let id = useId()
@@ -52,9 +53,9 @@ const features: Array<Feature> = [
     image: ''
   },
   {
-    name: '',
-    summary: 'Decentralized Security',
-    description: 'Traditional banks rely on central authorities, but with Circles, your savings are stored in secure, transparent smart contracts on the blockchain. No one but you and your circle have access, eliminating third-party risk and bringing unmatched peace of mind.',
+    name: (<Button className="mb-4">Trade Safely</Button>),
+    summary: 'Manual P2P',
+    description: 'Send and Receive Crypto by converting your cryptocurrencies into local fiat currency and transfer them seamlessly to any mobile money wallet.  ',
 
     icon: function InventoryIcon() {
       return (
@@ -76,9 +77,9 @@ const features: Array<Feature> = [
     image: ''
   },
   {
-    name: '',
-    summary: 'Collaborative Power',
-    description: 'Unlike traditional saving accounts, Circles lets you save with a group, friends, family, or co-workers, boosting your financial potential through collective contributions and shared goals, something Web2 platforms don’t offer.',
+    name: (<Button className="mb-4">Launch your App</Button>),
+    summary: 'Connect to our Api',
+    description: 'Business can plugin into the the global economy with REST API`s.\n Develop applications and decentralised applications (dApps)',
 
     icon: function ContactsIcon() {
       return (
@@ -111,28 +112,15 @@ function Feature({
       className={clsx(className, !isActive && '')}
       {...props}
     >
-      <div
-        className={clsx(
-          'w-9 rounded-lg',
-          isActive ? 'bg-blue-600' : 'bg-slate-500',
-        )}
-      >
-        <svg aria-hidden="true" className="h-9 w-9" fill="none">
-          <feature.icon />
-        </svg>
-      </div>
-      <h3
-        className={clsx(
-          'mt-6 text-sm font-medium',
-          isActive ? 'text-blue-600' : 'text-slate-600',
-        )}
-      >
-        {feature.name}
-      </h3>
+   
+
+      
+   
       <p className="mt-2 font-display text-xl text-slate-900">
         {feature.summary}
       </p>
-      <p className="mt-4 text-sm text-slate-600">{feature.description}</p>
+      <p className="mt-4 text-sm text-slate-600 mb-7">{feature.description}</p>
+      {feature.name}
     </div>
   )
 }
@@ -220,17 +208,16 @@ export function SecondaryFeatures() {
     <section
       id="secondary-features"
       aria-label="Features for simplifying everyday business tasks"
-      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32"
+      className="pb-14 pt-20 sm:pb-20 sm:pt-32 lg:pb-32 "
     >
       <Container>
         <div className="mx-auto max-w-2xl md:text-center">
           <h2 className="font-display text-3xl tracking-tight text-slate-900 sm:text-4xl">
-          Reasons Circles Outshines Traditional Savings
+          Experience Seamless Borderless Payments with Infra-Transankt
           </h2>
           <p className="mt-4 text-lg tracking-tight text-slate-700">
-          Circles transforms saving by combining group contributions, blockchain security, 
-          and fun rewards. It’s a safer, more engaging alternative to traditional 
-          savings methods.
+        
+          Send crypto or Send Fiat,  provide liquidity, or build on our cutting-edge platform – InfraTransankt empowers you to seamlessly bridge the worlds of digital assets and traditional finance.
           </p>
         </div>
         <FeaturesMobile />
