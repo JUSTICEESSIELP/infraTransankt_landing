@@ -111,7 +111,7 @@ export function Header() {
             <div className="hidden md:block">
               {/* <NavLink href="https://circles-2.gitbook.io/circles-docs">Docs</NavLink> */}
             </div>
-            <Button href="https://app.circlesonchain.xyz" color="blue">
+            <Button href="#" color="blue">
               <span>
                 Launch App<span className="hidden lg:inline"></span>
               </span>
