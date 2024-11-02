@@ -6,11 +6,11 @@ import '@/styles/tailwind.css'
 
 export const metadata: Metadata = {
   title: {
-    template: '%s - InfraTransankt',
+    template: 'InfraTransankt',
     default: 'p2p aggregator for ondemand onramp and offramp',
   },
   description:
-    'Most bookkeeping software is accurate, but hard to use. We make the opposite trade-off, and hope you don’t get audited.',
+    'p2p aggregator for ondemand onramp and offramp!',
 }
 
 const inter = Inter({
